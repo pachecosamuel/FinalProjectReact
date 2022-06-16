@@ -1,11 +1,13 @@
 import React from "react";
-import { Textito } from "./style";
+import { Container, Textito } from "./style";
 
 export const NotFound = () => {
 
-    return(
-        <Textito>
-            Oi, eu sou a NotFound!
-        </Textito>
+    return (
+        <Container>
+            <Textito>
+                Oi, eu sou a NotFound Error 404!
+            </Textito>
+        </Container>
     );
 }

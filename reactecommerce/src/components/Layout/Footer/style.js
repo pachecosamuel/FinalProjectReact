@@ -7,7 +7,7 @@ export const Caixa = styled.div `
 
     background-color: #192231;
 
-    border: 2px solid tomato;
+    border: 4px solid tomato;
     border-radius: 10px;
 `;
 

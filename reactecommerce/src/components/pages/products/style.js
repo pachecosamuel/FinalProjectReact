@@ -7,8 +7,10 @@ export const Container = styled.div `
 
     width: 85%;
     height: 70vh;
+    margin: 1rem auto 1rem;
 
-    border: 3px solid goldenrod;
+    background-color: #985E6D;
+    border: 5px solid black;
 `;
 
 export const Seila = styled.h1 `

@@ -8,7 +8,10 @@ export const Container = styled.div `
     width: 85%;
     height: 70vh;
 
-    border: 3px solid goldenrod;
+    margin: 1rem auto 1rem;
+
+    background-color: #985E6D;
+    border: 5px solid black;
 `;
 
 export const Texto = styled.h1 `
