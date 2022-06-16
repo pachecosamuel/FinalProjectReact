@@ -1,12 +1,14 @@
 import './App.css';
+import React from 'react';
+import { Root } from "./components/Routes/Root"
 
 function App() {
+
   return (
-    <div className="App">
-
-      <h1>Vamo botar pra fuder</h1>
-
-    </div>
+    
+    <>
+      <Root />
+    </>
   );
 }
 
