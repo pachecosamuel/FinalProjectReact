@@ -10,7 +10,7 @@ export const Container = styled.div `
     margin: 1rem auto 1rem;
     /* margin-top: 1rem; */
 
-    background-color: #985E6D;
+    background-color: #E2E1D9;
     border: 5px solid black;
 `;
 
