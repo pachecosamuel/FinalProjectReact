@@ -13,19 +13,17 @@ import {
   Image,
 } from "./styleNavBar";
 
-import "./navbar.css";
-
 export const NavBar = () => {
 
-  const [show, setShow] = useState(false);
+  const [show, setShow] = useState("0");
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        setShow(true); // Scroll down = esconde a navbar
+        setShow("-4000px"); // Scroll down = esconde a navbar
       } else {
-        setShow(false); // Scroll up = mostra a navbar
+        setShow("0"); // Scroll up = mostra a navbar
       }
 
       // Pra lembrar o último scroll
@@ -45,7 +43,7 @@ export const NavBar = () => {
   }, [lastScrollY]);
 
   return (
-    <MainContainer className={`active ${show}`}>
+    <MainContainer active={`${show}`}>
       <ContainerLogo>
         <Href href="/">
           <Image src={logo} />
