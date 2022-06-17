@@ -1,4 +1,4 @@
-.show {
-    top: 0;
+.hidden {
+    top: -1000px;
     transition: 0.7s;
 }

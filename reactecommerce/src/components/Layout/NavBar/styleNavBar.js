@@ -12,7 +12,7 @@ export const MainContainer = styled.div `
     justify-content: space-between;
     align-items: center;
     position: fixed;
-    top: -1000px;
+    top: 0;
     left: 0;
     transition: 0.7s;
     background-color: ${evening};

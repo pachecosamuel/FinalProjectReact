@@ -13,7 +13,7 @@ import "./navbar.css"
 
 export const NavBar = () => {
   
-  const [show, setShow] = useState(true);
+  const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
   const controlNavbar = () => {
@@ -41,7 +41,7 @@ export const NavBar = () => {
   }, [lastScrollY]);
 
   return (
-    <MainContainer className={`active ${show && "show"}`}>
+    <MainContainer className={`active ${show && "hidden"}`}>
       <ContainerLogo>
         <H1>Placeholder</H1>
       </ContainerLogo>
