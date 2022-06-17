@@ -3,7 +3,7 @@ import React from "react";
 import { NavBar } from "../Layout/NavBar"
 import { Footer } from "../Layout/Footer"
 
-import  Home  from '../pages/Home'
+import { Home } from '../pages/Home'
 import { Sobre } from '../pages/About'
 import { NotFound } from '../pages/NotFound'
 import { ProdutoApi } from '../pages/Products'
@@ -28,7 +28,7 @@ export const Root = () => {
 
             <Routes>
 
-                <Route exact path="/" element={<Home />} />
+                <Route path="/" element={<Home />} />
 
                 <Route path="/produtoapi" element={<ProdutoApi />} />
 

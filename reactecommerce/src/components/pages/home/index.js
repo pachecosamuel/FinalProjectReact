@@ -16,7 +16,7 @@ import {
 } from "./style";
 import "./styles.css";
 
-function Home() {
+export function Home() {
   return (
     <div className="App">
       <CardWrapper>

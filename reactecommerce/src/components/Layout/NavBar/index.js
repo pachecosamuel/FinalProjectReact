@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 
-import "./navbar.css"
 import logo from "../../../img/logo/logo.png";
 
 import {
@@ -14,6 +13,8 @@ import {
   Image,
 } from "./styleNavBar";
 
+import "./navbar.css"
+
 export const NavBar = () => {
   
   const [show, setShow] = useState(false);
@@ -22,9 +23,9 @@ export const NavBar = () => {
   const controlNavbar = () => {
     if (typeof window !== "undefined") {
       if (window.scrollY > lastScrollY) {
-        setShow(false); // Scroll down = esconde a navbar
+        setShow(true); // Scroll down = esconde a navbar
       } else {
-        setShow(true); // Scroll up = mostra a navbar
+        setShow(false); // Scroll up = mostra a navbar
       }
 
       // Pra lembrar o último scroll
