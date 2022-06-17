@@ -17,7 +17,7 @@ export const MainContainer = styled.div `
     transition: 0.7s;
     background-color: ${evening};
     width: 100%;
-    height: 80px;
+    height: 60px;
 `;
 
 export const ContainerLogo = styled.div`
@@ -27,8 +27,9 @@ export const ContainerLogo = styled.div`
     margin-left: 20px;
 `
 
-export const H1 = styled.p`
-    font-size: 2rem;
+export const H1 = styled.a`
+    text-decoration: none;
+    font-size: 1.8rem;
     color: aliceblue;
     text-shadow: 0px 0px 2px aliceblue;
     transition: 0.3s;
@@ -73,7 +74,7 @@ export const Href = styled.a`
     text-decoration: none;
     color: aliceblue;
     text-shadow: 0px 0px 2px aliceblue;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     transition: 0.3s;
     &:hover {
         text-shadow: 0px 0px 5px aliceblue;

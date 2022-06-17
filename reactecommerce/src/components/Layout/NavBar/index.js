@@ -43,7 +43,7 @@ export const NavBar = () => {
   return (
     <MainContainer className={`active ${show && "hidden"}`}>
       <ContainerLogo>
-        <H1>Placeholder</H1>
+        <H1 href="/">Placeholder</H1>
       </ContainerLogo>
       <ContainerRefs>
         <Lista>
