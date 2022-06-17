@@ -1,4 +1,8 @@
 import React, { useState, useEffect } from "react";
+
+import "./navbar.css"
+import logo from "../../../img/logo/logo.png";
+
 import {
   ContainerRefs,
   Item,
@@ -7,9 +11,8 @@ import {
   ContainerLogo,
   Href,
   H1,
+  Image,
 } from "./styleNavBar";
-
-import "./navbar.css"
 
 export const NavBar = () => {
   
@@ -43,7 +46,10 @@ export const NavBar = () => {
   return (
     <MainContainer className={`active ${show && "hidden"}`}>
       <ContainerLogo>
-        <H1 href="/">Placeholder</H1>
+        <Href href="/">
+            <Image src={logo}/>
+        </Href>
+        <H1 href="/">Saturno Geek</H1>
       </ContainerLogo>
       <ContainerRefs>
         <Lista>

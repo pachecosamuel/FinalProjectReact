@@ -25,11 +25,12 @@ export const ContainerLogo = styled.div`
     justify-content: center;
     align-items: center;
     margin-left: 20px;
+    gap: 20px;
 `
 
 export const H1 = styled.a`
     text-decoration: none;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
     color: aliceblue;
     text-shadow: 0px 0px 2px aliceblue;
     transition: 0.3s;
@@ -40,7 +41,11 @@ export const H1 = styled.a`
 `
 
 export const Image = styled.img`
-    width: 150px;
+    width: 65px;
+    transition: 0.3s;
+    &:hover {
+        transform: scale(105%);
+    }
 `
 
 export const ContainerRefs = styled.div`
