@@ -18,6 +18,7 @@ export const MainContainer = styled.div `
     background-color: ${evening};
     width: 100%;
     height: 60px;
+    z-index: 999;
 `;
 
 export const ContainerLogo = styled.div`
