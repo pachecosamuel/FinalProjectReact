@@ -1,27 +1,63 @@
-import React from "react";
-import { Link } from "react-router-dom"
-import { Item, Lista, Container, Teste } from "./styleNavBar"
+import React, { useState, useEffect } from "react";
+import {
+  ContainerRefs,
+  Item,
+  Lista,
+  MainContainer,
+  ContainerLogo,
+  Href,
+  H1,
+} from "./styleNavBar";
+
+import "./navbar.css"
 
 export const NavBar = () => {
+  
+  const [show, setShow] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
 
-    return (
+  const controlNavbar = () => {
+    if (typeof window !== "undefined") {
+      if (window.scrollY > lastScrollY) {
+        setShow(false); // Scroll down = esconde a navbar
+      } else {
+        setShow(true); // Scroll up = mostra a navbar
+      }
 
-        <Container>
-            <Lista>
+      // Pra lembrar o último scroll
+      setLastScrollY(window.scrollY);
+    }
+  };
 
-                <Item>
-                    <Link to="/" >indexHome</Link>
-                </Item>
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      window.addEventListener("scroll", controlNavbar);
 
-                <Item>
-                    <Link to="/produtoapi" >ProdutoApi</Link>
-                </Item>
+      // Função que limpa, evitando loops
+      return () => {
+        window.removeEventListener("scroll", controlNavbar);
+      };
+    }
+  }, [lastScrollY]);
 
-                <Item>
-                    <Link to="/sobre" >Sobre</Link>
-                </Item>
-
-            </Lista>
-        </Container>
-    );
-}
+  return (
+    <MainContainer className={`active ${show && "show"}`}>
+      <ContainerLogo>
+        <H1>Placeholder</H1>
+      </ContainerLogo>
+      <ContainerRefs>
+        <Lista>
+          <Item>
+            <Href href="/">Home</Href>
+          </Item>
+          <Item>
+            <Href href="/produtoapi">Produtos</Href>
+          </Item>
+          <Item>
+            <Href href="/sobre">Sobre</Href>
+          </Item>
+        </Lista>
+      </ContainerRefs>
+    </MainContainer>
+  );
+};
