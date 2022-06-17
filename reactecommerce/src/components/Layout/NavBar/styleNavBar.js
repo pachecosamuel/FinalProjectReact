@@ -6,7 +6,7 @@ const cloud = "#98878f"
 const sunset = "#985e6d"
 const evening = "#192231"
 
-export const MainContainer = styled.div `
+export const MainContainer = styled.div`
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -14,7 +14,7 @@ export const MainContainer = styled.div `
     position: fixed;
     top: 0;
     left: 0;
-    transition: 0.7s;
+    transition: 2s;
     background-color: ${evening};
     width: 100%;
     height: 70px;
@@ -57,7 +57,7 @@ export const ContainerRefs = styled.div`
     margin-right: 20px;
 `
 
-export const Lista = styled.ul `
+export const Lista = styled.ul`
     list-style: none;
     list-style-type: none;
     display: flex;
@@ -65,7 +65,7 @@ export const Lista = styled.ul `
     gap: 20px;
 `;
 
-export const Item = styled.li `
+export const Item = styled.li`
     list-style: none;
     list-style-type: none;
     color: aliceblue;

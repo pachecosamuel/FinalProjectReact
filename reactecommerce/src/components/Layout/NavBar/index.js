@@ -13,10 +13,10 @@ import {
   Image,
 } from "./styleNavBar";
 
-import "./navbar.css"
+import "./navbar.css";
 
 export const NavBar = () => {
-  
+
   const [show, setShow] = useState(false);
   const [lastScrollY, setLastScrollY] = useState(0);
 
@@ -45,10 +45,10 @@ export const NavBar = () => {
   }, [lastScrollY]);
 
   return (
-    <MainContainer className={`active ${show && "hidden"}`}>
+    <MainContainer className={`active ${show}`}>
       <ContainerLogo>
         <Href href="/">
-            <Image src={logo}/>
+          <Image src={logo} />
         </Href>
         <H1 href="/">Saturno Geek</H1>
       </ContainerLogo>
