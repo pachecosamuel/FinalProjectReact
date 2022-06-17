@@ -1,6 +1,7 @@
 import React from "react";
 import styled, { css } from "styled-components";
 
+
 export const CardWrapper = styled.div`
   overflow: hidden;
   padding: 0 0 32px;
@@ -9,6 +10,21 @@ export const CardWrapper = styled.div`
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
+  `;
+
+export const Container = styled.div `
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 85%;
+    height: 70vh;
+    margin: 1rem auto 1rem;
+    /* margin-top: 1rem; */
+
+    background-color: #E2E1D9;
+    border: 5px solid black;
+
 `;
 
 export const CardHeader = styled.header`

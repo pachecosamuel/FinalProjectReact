@@ -1,0 +1,4 @@
+.hidden {
+    top: -4000px;
+    transition: 0.7s;
+}
