@@ -7,7 +7,6 @@ import {
   CardBody,
   CardFieldset,
   CardButton,
-  
 } from "./style";
 import "./styles.css";
 
@@ -20,7 +19,7 @@ export function Home() {
         </CardHeader>
         <CardBody>
           <CardFieldset>
-          IMAGEM CATEGORIA 1
+            IMAGEM CATEGORIA 1
           </CardFieldset>
           <CardFieldset>
             <CardButton type="button">Veja mais!</CardButton>
@@ -34,7 +33,7 @@ export function Home() {
         </CardHeader>
         <CardBody>
           <CardFieldset>
-          IMAGEM CATEGORIA 2
+            IMAGEM CATEGORIA 2
           </CardFieldset>
           <CardFieldset>
             <CardButton type="button">Veja mais!</CardButton>
@@ -48,7 +47,7 @@ export function Home() {
         </CardHeader>
         <CardBody>
           <CardFieldset>
-          IMAGEM CATEGORIA 1
+            IMAGEM CATEGORIA 1
           </CardFieldset>
           <CardFieldset>
             <CardButton type="button">Veja mais!</CardButton>
@@ -56,9 +55,9 @@ export function Home() {
         </CardBody>
       </CardWrapper>
 
-      
-      
-      
+
+
+
     </div>
   );
 }

@@ -13,7 +13,7 @@ export const CardWrapper = styled.div`
   border-radius: 5px;
   `;
 
-export const Container = styled.div `
+export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
