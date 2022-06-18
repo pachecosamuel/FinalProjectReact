@@ -2,10 +2,9 @@
 // que a API irá disponibilizar. Esse nome
 // é fictício e temporário.
 
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { ObterProdutos } from "../../Services/api-produto";
 import { Container, ApiListWrapper, ContainerCard } from "./style";
-import { v4 as uuidv4 } from "uuid";
 
 export const ProdutoApi = () => {
 
