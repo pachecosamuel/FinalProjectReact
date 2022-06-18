@@ -9,10 +9,12 @@ import {
   CardButton,
 } from "./style";
 import "./styles.css";
+import Banner from "../../Banner";
 
 export function Home() {
   return (
     <div className="App">
+      <Banner />
       <CardWrapper>
         <CardHeader>
           <CardHeading>Categoria 1</CardHeading>
