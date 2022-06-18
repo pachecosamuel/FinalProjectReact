@@ -5,14 +5,9 @@ import {
   CardHeader,
   CardHeading,
   CardBody,
-  CardIcon,
   CardFieldset,
-  CardInput,
-  CardOptionsItem,
-  CardOptions,
-  CardOptionsNote,
   CardButton,
-  CardLink
+  
 } from "./style";
 import "./styles.css";
 
@@ -21,188 +16,48 @@ export function Home() {
     <div className="App">
       <CardWrapper>
         <CardHeader>
-          <CardHeading>Sign in</CardHeading>
+          <CardHeading>Categoria 1</CardHeading>
         </CardHeader>
-
         <CardBody>
           <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
+          IMAGEM CATEGORIA 1
           </CardFieldset>
-
           <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" eye small />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardOptionsNote>Or sign up with</CardOptionsNote>
-
-            <CardOptions>
-              <CardOptionsItem>
-                <CardIcon className="fab fa-google" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-twitter" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-facebook" big />
-              </CardOptionsItem>
-            </CardOptions>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardButton type="button">Sign Up</CardButton>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardLink>I already have an account</CardLink>
+            <CardButton type="button">Veja mais!</CardButton>
           </CardFieldset>
         </CardBody>
       </CardWrapper>
+
       <CardWrapper>
         <CardHeader>
-          <CardHeading>Sign in</CardHeading>
+          <CardHeading>Categoria 2</CardHeading>
         </CardHeader>
-
         <CardBody>
           <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
+          IMAGEM CATEGORIA 2
           </CardFieldset>
-
           <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" eye small />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardOptionsNote>Or sign up with</CardOptionsNote>
-
-            <CardOptions>
-              <CardOptionsItem>
-                <CardIcon className="fab fa-google" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-twitter" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-facebook" big />
-              </CardOptionsItem>
-            </CardOptions>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardButton type="button">Sign Up</CardButton>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardLink>I already have an account</CardLink>
+            <CardButton type="button">Veja mais!</CardButton>
           </CardFieldset>
         </CardBody>
       </CardWrapper>
+
       <CardWrapper>
         <CardHeader>
-          <CardHeading>Sign in</CardHeading>
+          <CardHeading>Categoria 3</CardHeading>
         </CardHeader>
-
         <CardBody>
           <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
+          IMAGEM CATEGORIA 1
           </CardFieldset>
-
           <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" eye small />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardOptionsNote>Or sign up with</CardOptionsNote>
-
-            <CardOptions>
-              <CardOptionsItem>
-                <CardIcon className="fab fa-google" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-twitter" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-facebook" big />
-              </CardOptionsItem>
-            </CardOptions>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardButton type="button">Sign Up</CardButton>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardLink>I already have an account</CardLink>
+            <CardButton type="button">Veja mais!</CardButton>
           </CardFieldset>
         </CardBody>
       </CardWrapper>
-      <CardWrapper>
-        <CardHeader>
-          <CardHeading>Sign in</CardHeading>
-        </CardHeader>
 
-        <CardBody>
-          <CardFieldset>
-            <CardInput placeholder="Username" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="E-mail" type="text" required />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardInput placeholder="Password" type="password" required />
-            <CardIcon className="fa fa-eye" eye small />
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardOptionsNote>Or sign up with</CardOptionsNote>
-
-            <CardOptions>
-              <CardOptionsItem>
-                <CardIcon className="fab fa-google" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-twitter" big />
-              </CardOptionsItem>
-
-              <CardOptionsItem>
-                <CardIcon className="fab fa-facebook" big />
-              </CardOptionsItem>
-            </CardOptions>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardButton type="button">Sign Up</CardButton>
-          </CardFieldset>
-
-          <CardFieldset>
-            <CardLink>I already have an account</CardLink>
-          </CardFieldset>
-        </CardBody>
-      </CardWrapper>
+      
+      
       
     </div>
   );
