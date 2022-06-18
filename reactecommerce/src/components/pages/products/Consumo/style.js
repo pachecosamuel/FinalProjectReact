@@ -1,41 +1,6 @@
 import styled from "styled-components";
 
 export const Container = styled.div `
-
-    display: flex;
-    flex-direction: column;
-    flex: 1;
-    align-items: center;
-    justify-content: center;
-
-    width: 85%;
-    height: 70vh;
-    margin: 1rem auto 1rem;
-    padding-top: 80px;
-
-    background-color: #ffffff;
-    border: 5px solid black;
-
-    h1 {
-        font-size: 1.2rem;
-        color: black;
-    }
-`;
-
-export const ApiListWrapper = styled.div `
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
-    justify-self: center;
-
-    max-width: 1000px;
-    /* list-style-type: none; */
-
-    flex-wrap: wrap;
-    gap: 10px;
-`;
-
-export const ContainerCard = styled.div `
     background: #985e6d;
     padding: 10px;
     height: 280px;
@@ -79,3 +44,22 @@ export const ButtonArea = styled.div `
     margin-top: 5px;
 `;
 
+
+export const Button = styled.button `
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+
+    transition: opacity 0.2s ease-out;
+
+    svg{
+        height: 20px;
+        width: 20px;
+        color: #1e1e1e;
+    }
+
+    &:hover{
+        opacity: 0.5;
+        color: tomato;
+    }
+`;
