@@ -1,0 +1,183 @@
+.Icones {
+    margin: 1.1rem;
+    padding: 0.4rem;
+    color: #ffffff;
+    font-size: 1.4rem;
+    text-shadow: 3px 3px rgb(12, 11, 11);
+}
+
+.SectionAbout {
+    width: 100%;
+    padding-block: 40px;
+    padding-inline: 40px;
+}
+
+.AboutTitle {
+    color: #ffffff;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    width: 100%;
+}
+
+.Cards {
+    background-color: #494E6B;
+    width: 100%;
+    max-width: 1100px;
+    border-radius: 1.25rem;
+    transition: 0.3s;
+    padding-block: 30px;
+    padding-inline: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.ContainerFoto {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Foto {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    height: 200px;
+    margin-bottom: 10px;
+}
+
+.FotoPessoa {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 15px var(--txtmain2);
+    transition: 0.3s;
+    object-fit: cover;
+}
+
+.FotoPessoa:hover {
+    transform: scale(105%);
+}
+
+.Texto {
+    width: 100%;
+    text-shadow: 0px 0px 2px var(--shadowmain);
+}
+
+.Nome {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 1.563rem;
+    font-family: "Poppins";
+    width: 100%;
+}
+
+.Sobre {
+    text-align: center;
+    color: #ffffff;
+    font-weight: 200;
+    font-size: 1rem;
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    text-indent: 20px;
+    font-weight: bold;
+    display: flex;
+    width: 100%;
+}
+
+.SocialMedia {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.SocialMedia ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.SocialMedia ul,
+li {
+    list-style: none;
+}
+
+.SocialMedia img {
+    width: 35px;
+}
+
+.SocialMedia li {
+    transition: 0.3s;
+}
+
+.SocialMedia li:hover {
+    transform: scale(110%);
+}
+
+.Cards:hover {
+    background-color: var(--bgmain3strong);
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+@media screen and (min-width: 768px) {
+    .Container {
+        flex-direction: row;
+    }
+
+    .SocialMedia img {
+        width: 50px;
+    }
+
+    .AboutTitle {
+        font-size: 26px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .Cards {
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        align-items: center;
+        padding-block: 30px;
+    }
+
+    .SocialMedia {
+        margin-bottom: 0px;
+    }
+
+    .Foto {
+        width: 260px;
+        height: 260px;
+    }
+
+    .Texto {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+        width: 70%;
+        height: 100%;
+    }
+
+    .Sobre {
+        text-align: justify;
+        font-size: 1.25rem;
+    }
+}
