@@ -31,8 +31,6 @@ export function Product() {
         list.push(produto.idProduto)
 
         setCartState(cartState.concat(list))
-
-        console.log(cartState)
     }
 
     if (produto === undefined) {
