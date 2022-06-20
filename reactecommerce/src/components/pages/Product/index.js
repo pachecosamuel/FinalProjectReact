@@ -55,7 +55,7 @@ export function Product() {
                                 <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
                             </RightTop>
                             <RightBottom>
-                                <BtnHref href="#" onClick={handleAdd}>
+                                <BtnHref href="http://localhost:3000/carrinho" onClick={handleAdd}>
                                     <Btn>Adicionar ao carrinho</Btn>
                                 </BtnHref>
                                 <BtnHref href="http://localhost:3000/produtos">
