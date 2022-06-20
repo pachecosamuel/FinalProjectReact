@@ -1,6 +1,8 @@
 import styled from "styled-components";
+import Fundo404 from "../../../img/404.png";
 
-export const Container = styled.div `
+
+export const Container = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
@@ -8,13 +10,12 @@ export const Container = styled.div `
     width: 85%;
     height: 70vh;
     margin: 1rem auto 1rem;
-    /* margin-top: 1rem; */
+    padding-top: 80px;
 
-    background-color: #985E6D;
-    border: 5px solid black;
+    background-image: url(${Fundo404});
+    background-position: center;
+
+    border: 5px solid white;
+    border-radius: 50px;
 `;
 
-
-export const Textito = styled.h1 `
-    font-size: 1.2rem;
-`;
