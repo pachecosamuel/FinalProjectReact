@@ -1,4 +1,11 @@
 import styled from "styled-components";
+import img from "../../../img/saturn.jpg";
+
+export const Saturno = styled.div`
+    background-image: url(${img});
+    background-position: center;
+    background-size: cover;
+`;
 
 export const Container = styled.div`
     display: flex;
@@ -65,10 +72,13 @@ export const AboutSubtitle = styled.h3`
 export const AboutParagraph = styled.p`
     font-size: 1.1rem;
     text-align: justify;
+    font-weight: bold;
+
+    background-color: black;
+    opacity: 0.7;
 
     padding: 3rem;
     margin: 1rem;
 
-    border: 2.5px solid white;
     border-radius: 100px;
 `
