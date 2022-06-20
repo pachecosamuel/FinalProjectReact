@@ -1,202 +1,25 @@
-import React from "react";
+import React from 'react'
+import { Container, ContainerTitle, Href, ArrowLeft, ArrowRight, AboutTitle, AboutSubtitle, AboutParagraph } from "./style";
+import arrow from '../../../img/arrow.png'
 
-import { Container, Organizacao, Texto } from "./style";
-import styles from "./style.module.css"
-import { FaInstagram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
-import { FaGithub } from "react-icons/fa";
-import Samuel from "../../../img/fotoSamuel.jpg"
-import Bernardo from "../../../img/fotoBernardo.jpg"
-import Jessica from "../../../img/fotoJessica.jpg"
-import Mateus from "../../../img/fotoMateus.jpg"
-import Simone from "../../../img/fotoSimone.jpg"
-
-// import App from "../../../img/imagemSamuel.jpg"
-
-// C:\Users\Samuel Pacheco\Desktop\ProjetoReact\reactecommerce\src\img
-// src\img
-
-export const Sobre = () => {
-
+export function Sobre() {
     return (
         <Container>
-            <div className={styles.AboutTitle}>
-                <h1>Sobre os Devs</h1>
-            </div>
+            <ContainerTitle>
+                <Href href="http://localhost:3000/sobre/devs"><ArrowLeft src={arrow}/></Href>
+                <AboutTitle>Saturno Geek</AboutTitle>
+                <Href href="http://localhost:3000/sobre/devs"><ArrowRight src={arrow}/></Href>
+            </ContainerTitle>
+            <AboutSubtitle>Nós somos a Saturno Geek, uma loja e-Commerce de produtos geek, feita por nerds para nerds.</AboutSubtitle>
+            <AboutParagraph>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus vel sem pulvinar, consequat nibh eu, convallis ex. Vestibulum aliquet in quam id congue. Fusce condimentum lorem non tortor rutrum, non interdum nisl maximus. Donec mollis nisi nec ipsum placerat, at lobortis augue laoreet. Cras quis tempor neque, ut luctus libero. Quisque fringilla, orci et suscipit volutpat, urna ex pretium nibh, eget facilisis turpis enim nec eros. Suspendisse non dui at dolor mollis egestas at quis quam. Aliquam sem libero, volutpat vel nibh ac, consequat consequat arcu. Ut condimentum mi varius tincidunt blandit. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla semper egestas diam non eleifend. Phasellus ac nibh sem. Integer eget tempor ipsum. Quisque nec libero in nibh efficitur egestas. In maximus dapibus tortor. Duis vel mollis libero.
 
-            <Organizacao>
-                <section className={styles.SectionAbout}>
+Praesent mi ipsum, elementum a sapien vel, vehicula faucibus ipsum. Quisque fringilla lacus vel arcu vulputate, ac cursus eros laoreet. Phasellus pretium augue ac sem semper venenatis. Maecenas ultrices id lacus vitae fermentum. Sed enim dolor, mollis eget diam in, efficitur faucibus massa. Donec venenatis facilisis nisi, non iaculis magna aliquam at. Suspendisse porta quam sed turpis efficitur ornare. Etiam nulla lorem, pharetra ullamcorper tincidunt eu, aliquet tempus diam. Phasellus scelerisque, ipsum sed egestas elementum, ipsum felis cursus nisl, in egestas velit nunc sed dui. Integer interdum quis elit id lobortis.
 
-                    <div className={styles.Container}>
+Cras gravida, massa nec luctus porta, neque nisi luctus purus, nec elementum metus ipsum eget leo. Vestibulum luctus leo ut laoreet finibus. Donec elementum velit sit amet lorem pharetra, sit amet maximus sem lobortis. Sed eros elit, convallis at consequat eget, feugiat et justo. Quisque ultricies arcu a turpis tempus finibus. Quisque porta a est nec porttitor. Vivamus nec velit laoreet, lobortis mi et, auctor eros. Morbi dictum dui sit amet lectus gravida hendrerit. Mauris enim dui, luctus a ligula at, dictum feugiat lacus.
 
-                        <div className={styles.Cards}>
-                            <div className={styles.ContaineFoto}>
-                                <div className={styles.Foto}>
-                                    <img className={styles.FotoPessoa} src={Bernardo} alt="Foto do Bernardo" />
-                                </div>
-                                <div className={styles.NomeContainer}>
-                                    <h2 className={styles.Nome}>Bernardo Gonçalves</h2>
-                                </div>
-                                <div className={styles.SocialMedia}>
-                                    <ul>
-                                        <li><a href="https://www.instagram.com/bezinesss/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="https://www.linkedin.com/in/bernardodevadv/" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
-                                        <li><a href="https://github.com/bernardoR0ch4" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.Texto}>
-                                <p className={styles.Sobre} >
-                                    Bernardo tem 26 anos, Brasileiro, Petropolitano, ávido por conhecimento e adora aprender coisas novas.
-                                    Ex-estudante de Ciências Biológicas pela Universidade Federal do Estado do Rio de Janeiro, bacharelado
-                                    em Direito pela Universidade Estácio de Sá agora estuda programação de softwares através da Residência em TIC/Software
-                                    do Serratec. Também é apaixonado por música, gastronomia e futebol.
-                                </p>
-                            </div>
-                        </div>
-                    </div >
-                </section >
-            </Organizacao>
+Sed varius justo vel massa tempor, a ultrices dolor malesuada. Mauris eu urna tortor. Phasellus non finibus nisl. Nullam non sem quis tortor faucibus placerat sit amet non risus. Curabitur iaculis risus tortor, nec posuere massa malesuada a. Nunc sagittis velit ac lectus dictum, non vehicula diam pretium. Vivamus tortor lectus, ultrices ac diam at, tincidunt scelerisque nibh. Donec eget elementum ante. Proin porta vel neque et mattis. In condimentum finibus vulputate. Phasellus semper eros sagittis, condimentum libero ac, hendrerit neque. Mauris maximus urna ut neque malesuada gravida. Suspendisse tincidunt ex nibh, non fermentum metus fermentum dapibus. Fusce placerat, elit at elementum egestas, mi purus consequat velit, quis sagittis lectus metus sed felis. Praesent vitae efficitur turpis.
 
-
-            <Organizacao>
-                <section className={styles.SectionAbout}>
-
-                    <div className={styles.Container}>
-
-                        <div className={styles.Cards}>
-                            <div className={styles.ContaineFoto}>
-                                <div className={styles.Foto}>
-                                    <img className={styles.FotoPessoa} src={Mateus} alt="Foto do Mateus" />
-                                </div>
-                                <div className={styles.NomeContainer}>
-                                    <h2 className={styles.Nome}>Mateus Reis</h2>
-                                </div>
-                                <div className={styles.SocialMedia}>
-                                    <ul>
-                                        <li><a href="https://www.instagram.com/matt.reis__/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="https://www.linkedin.com/in/mateuspsvreis/" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
-                                        <li><a href="https://github.com/mattpsvreis" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.Texto}>
-                                <p className={styles.Sobre} >
-                                    Mateus, 21 anos, é um Desenvolvedor Full Stack que está atualmente cursando Residência em TIC/Software pelo SERRATEC em parceria com SENAI. Também está cursando bacharelado em Administração pela UFRRJ, estando já no 6º semestre. Hoje está em busca de seguir seu sonho de se tornar um Desenvolvedor Full Stack e ingressar no mercado de T.I, uma área que sempre teve facilidade desde pequeno.
-                                </p>
-                            </div>
-                        </div>
-                    </div >
-                </section >
-            </Organizacao>
-
-            <Organizacao>
-                <section className={styles.SectionAbout}>
-
-                    <div className={styles.Container}>
-
-                        {/* <!-- Samuel -->
-                    <!-- SAMUEL --> */}
-                        <div className={styles.Cards}>
-                            <div className={styles.ContaineFoto}>
-                                <div className={styles.Foto}>
-                                    <img className={styles.FotoPessoa} src={Samuel} alt="Foto do Samuel" />
-                                </div>
-                                <div className={styles.NomeContainer}>
-                                    <h2 className={styles.Nome}>Samuel Pacheco</h2>
-                                </div>
-                                <div className={styles.SocialMedia}>
-                                    <ul>
-                                        <li><a href="https://www.instagram.com/pachecosamuel_/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="https://www.linkedin.com/in/samuel-pacheco07" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
-                                        <li><a href="https://github.com/pachecosamuel" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.Texto}>
-                                <p className={styles.Sobre} >
-                                    Samuel tem 24 anos, Gestor de metodologias ágeis e desenvolvedor de software, nascido na região serrana do Rio do Janeiro. Apaixonado desde a infância por games, consoles e tecnologia, assim continua até os dias atuais. No momento, está cursando a residência TIC-Serratec em desenvolvimento Full Stack 2022.1 e também a faculdade de Gestão de TI.
-                                </p>
-                            </div>
-                        </div>
-                    </div >
-                </section >
-            </Organizacao>
-
-            <Organizacao>
-                <section className={styles.SectionAbout}>
-
-                    <div className={styles.Container}>
-
-                        {/* <!-- Samuel -->
-                    <!-- SAMUEL --> */}
-                        <div className={styles.Cards}>
-                            <div className={styles.ContaineFoto}>
-                                <div className={styles.Foto}>
-                                    <img className={styles.FotoPessoa} src={Simone} alt="Foto do Simone" />
-                                </div>
-                                <div className={styles.NomeContainer}>
-                                    <h2 className={styles.Nome}>Simone Rodrigues</h2>
-                                </div>
-                                <div className={styles.SocialMedia}>
-                                    <ul>
-                                        <li><a href="https://www.instagram.com/simone.araujo13/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="#" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
-                                        <li><a href="https://github.com/rodriguessimone" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.Texto}>
-                                <p className={styles.Sobre} >
-                                    Simone tem 50 anos, formada em Direito, e com experiência na área
-                                    administrativa. Está sempre disposta à novos desafios, hoje, ela
-                                    cursa o programa de Residência de Software, oferecido pelo
-                                    Serratec. E nas horas vagas, está à procura por novas aventuras e
-                                    inovações, ampliando sempre o seu conhecimento e aprimorando seus
-                                    dons e habilidades.
-                                </p>
-                            </div>
-                        </div>
-                    </div >
-                </section >
-            </Organizacao>
-
-            <Organizacao>
-                <section className={styles.SectionAbout}>
-
-                    <div className={styles.Container}>
-
-                        {/* <!-- Samuel -->
-                    <!-- SAMUEL --> */}
-                        <div className={styles.Cards}>
-                            <div className={styles.ContaineFoto}>
-                                <div className={styles.Foto}>
-                                    <img className={styles.FotoPessoa} src={Jessica} alt="Foto do Jessica" />
-                                </div>
-                                <div className={styles.NomeContainer}>
-                                    <h2 className={styles.Nome}>Jéssica Sabino</h2>
-                                </div>
-                                <div className={styles.SocialMedia}>
-                                    <ul>
-                                        <li><a href="https://www.instagram.com/jeje.sabino/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="#" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
-                                        <li><a href="https://github.com/JessySabino" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div className={styles.Texto}>
-                                <p className={styles.Sobre} >
-                                    Jéssica, tem 30 anos, formada em Tecnologia da informação, estudande de Engenharia de Computação - CEFET e atualmente cursando a Residência TIC/Software pelo Serratec. Sempre trabalhei com manutenção e redes de computadores, só agora começei a me interesar por programação. Musicista nas horas vagas, e apaixonada por séries.
-                                </p>
-                            </div>
-                        </div>
-                    </div >
-                </section >
-            </Organizacao>
-
-
-        </Container >
-
-
-    );
+Etiam sed egestas dui, sit amet tristique metus. Aenean non porta orci, id varius mi. Sed tincidunt ac lorem id posuere. Vestibulum semper metus in mauris venenatis tristique. Aenean sit amet leo ultricies, feugiat sem id, aliquam dui. Quisque id facilisis dolor, at malesuada odio. In hac habitasse platea dictumst. Nunc ac eleifend mauris. Nulla accumsan vehicula convallis. Donec a enim lacinia, efficitur sapien non, fringilla enim. Ut eu pretium nunc. Sed fringilla enim vitae tempus convallis. Vestibulum quis finibus nibh. Proin rutrum aliquam nisi vitae porttitor. Nam vitae diam lacinia, fringilla urna quis, lacinia justo.</AboutParagraph>
+        </Container>
+    )
 }
