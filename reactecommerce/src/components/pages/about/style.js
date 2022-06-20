@@ -5,11 +5,14 @@ export const Container = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: top;
+    margin: auto;
+
     color: aliceblue;
     padding-block: 30px;
     padding-inline: 40px;
+    
     gap: 15px;
-    height: 80vh;
+    max-width: 1280px;
 `;
 
 export const ContainerTitle = styled.div`
@@ -54,11 +57,18 @@ export const AboutTitle = styled.h1`
 `
 
 export const AboutSubtitle = styled.h3`
-    font-size: 18px;
+    font-size: 1.5rem;
     text-align: center;
+    margin: 2rem auto 2rem;
 `
 
 export const AboutParagraph = styled.p`
-    font-size: 14px;
+    font-size: 1.1rem;
     text-align: justify;
+
+    padding: 3rem;
+    margin: 1rem;
+
+    border: 2.5px solid white;
+    border-radius: 100px;
 `
