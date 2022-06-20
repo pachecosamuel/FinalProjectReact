@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { Root } from "./components/Routes/Root"
+import { Root } from "./components/Routes/root"
 
 function App() {
 
