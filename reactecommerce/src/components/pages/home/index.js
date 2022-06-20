@@ -14,6 +14,7 @@ import {
   Link
 } from 'react-router-dom';
 import Banner from "../../Banner";
+import Marcas from "../../Marcas";
 
 
 export function Home() {
@@ -66,6 +67,8 @@ export function Home() {
           </CardFieldset>
         </CardBody>
       </CardWrapper3>
+
+      <Marcas/>
     </div>
   );
 }
