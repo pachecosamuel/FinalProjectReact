@@ -113,16 +113,17 @@ export const RightBottom = styled.div`
 
 export const Btn = styled.button`
     cursor: pointer;
+    background-color: #fff;
     border: none;
-    background-color: #eee;
     padding: 10px;
     font-weight: bold;
     font-size: 20px;
     transition: 0.2s;
     box-shadow: 0px 0px 10px #555;
+    border: 2px solid #111;
     border-radius: 10px;
     &:hover {
-        background-color: #fff;
+        background-color: #eee;
         transform: scale(102%)
     }
 `
