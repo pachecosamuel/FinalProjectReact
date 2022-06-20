@@ -7,7 +7,7 @@ import { Home } from '../pages/home'
 import { Sobre } from '../pages/about'
 import { SobreDevs } from '../pages/aboutdevs'
 import { NotFound } from '../pages/notfound'
-import { ProdutoApi } from '../pages/products'
+import { Products } from '../pages/products'
 import { Product } from '../pages/product'
 import { Cart } from '../pages/cart'
 
@@ -25,7 +25,7 @@ export const Root = () => {
             <NavBar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/produtoapi" element={<ProdutoApi />} />
+                <Route path="/produtos" element={<Products />} />
                 <Route path="/sobre" element={<Sobre />} />
                 <Route path="/sobre/devs" element={<SobreDevs />} />
                 <Route path="/produto/:idUseParams" element={<Product />} />

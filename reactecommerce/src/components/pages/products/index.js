@@ -10,7 +10,7 @@ import { AddCard } from "./AddCard/"
 
 
 
-export const ProdutoApi = () => {
+export const Products = () => {
     const [produtos, setProdutos] = React.useState([]);
 
     useEffect(() => {

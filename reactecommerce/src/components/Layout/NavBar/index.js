@@ -56,7 +56,7 @@ export const NavBar = () => {
             <Href href="/">Home</Href>
           </Item>
           <Item>
-            <Href href="/produtoapi">Produtos</Href>
+            <Href href="/produtos">Produtos</Href>
           </Item>
           <Item>
             <Href href="/sobre">Sobre</Href>

@@ -48,7 +48,7 @@ export function Product() {
                                     <BtnHref href="#">Adicionar ao carrinho</BtnHref>
                                 </Btn>
                                 <Btn>
-                                    <BtnHref href="http://localhost:3000/produtoapi">Voltar</BtnHref>
+                                    <BtnHref href="http://localhost:3000/produtos">Voltar</BtnHref>
                                 </Btn>
                             </RightBottom>
                         </Right>
