@@ -9,7 +9,7 @@ import {
   CardButton,
 } from "./style";
 import "./styles.css";
-import Banner from "../../Banner";
+import Banner from "./Banner";
 
 export function Home() {
   return (
