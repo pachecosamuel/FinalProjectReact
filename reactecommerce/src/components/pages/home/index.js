@@ -28,7 +28,7 @@ export function Home() {
           </CardFieldset>
         </CardBody>
       </CardWrapper>
-
+      
       <CardWrapper>
         <CardHeader>
           <CardHeading>Categoria 2</CardHeading>
@@ -56,10 +56,6 @@ export function Home() {
           </CardFieldset>
         </CardBody>
       </CardWrapper>
-
-
-
-
     </div>
   );
 }
