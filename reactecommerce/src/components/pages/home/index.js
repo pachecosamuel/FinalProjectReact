@@ -1,7 +1,8 @@
 import React from "react";
-import ReactDOM from "react-dom";
 import {
-  CardWrapper,
+  CardWrapper1,
+  CardWrapper2,
+  CardWrapper3,
   CardHeader,
   CardHeading,
   CardBody,
@@ -9,58 +10,65 @@ import {
   CardButton,
 } from "./style";
 import "./styles.css";
+import {
+  Link
+} from 'react-router-dom';
 import Banner from "../../Banner";
+
 
 export function Home() {
   return (
     <div className="App">
       <Banner />
-      <CardWrapper>
+      <CardWrapper1>
         <CardHeader>
-          <CardHeading>Categoria 1</CardHeading>
+          <CardHeading></CardHeading>
         </CardHeader>
         <CardBody>
           <CardFieldset>
-            IMAGEM CATEGORIA 1
+           
           </CardFieldset>
           <CardFieldset>
-            <CardButton type="button">Veja mais!</CardButton>
+            <CardButton type="button" >
+            <Link to = "/produtoapi" >Veja mais!</Link>
+            </CardButton>
           </CardFieldset>
         </CardBody>
-      </CardWrapper>
-      
-      <CardWrapper>
-        <CardHeader>
-          <CardHeading>Categoria 2</CardHeading>
-        </CardHeader>
-        <CardBody>
-          <CardFieldset>
-            IMAGEM CATEGORIA 2
-          </CardFieldset>
-          <CardFieldset>
-            <CardButton type="button">Veja mais!</CardButton>
-          </CardFieldset>
-        </CardBody>
-      </CardWrapper>
+      </CardWrapper1>
 
-      <CardWrapper>
+      <CardWrapper2>
         <CardHeader>
-          <CardHeading>Categoria 3</CardHeading>
+          <CardHeading></CardHeading>
         </CardHeader>
         <CardBody>
           <CardFieldset>
-            IMAGEM CATEGORIA 1
           </CardFieldset>
           <CardFieldset>
-            <CardButton type="button">Veja mais!</CardButton>
+          <CardButton type="button" >
+            <Link to = "/produtoapi" >Veja mais!</Link>
+            </CardButton>
           </CardFieldset>
         </CardBody>
-      </CardWrapper>
+      </CardWrapper2>
+
+      <CardWrapper3>
+        <CardHeader>
+          <CardHeading></CardHeading>
+        </CardHeader>
+        <CardBody>
+          <CardFieldset>
+            
+          </CardFieldset>
+          <CardFieldset>
+          <CardButton type="button" >
+            <Link to = "/produtoapi" >Veja mais!</Link>
+            </CardButton>
+          </CardFieldset>
+        </CardBody>
+      </CardWrapper3>
     </div>
   );
 }
 
 export default Home
 
-const rootElement = document.getElementById("root");
-ReactDOM.render(<Home />, rootElement);

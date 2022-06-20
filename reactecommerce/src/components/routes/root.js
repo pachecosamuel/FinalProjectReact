@@ -13,7 +13,6 @@ import {
     BrowserRouter as Router,
     Routes,
     Route,
-    Link
 } from 'react-router-dom';
 
 export const Root = () => {
