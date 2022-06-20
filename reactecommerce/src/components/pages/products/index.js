@@ -3,7 +3,7 @@
 // é fictício e temporário.
 
 import React, { useEffect } from "react";
-import { ObterProdutos } from "../../Services/api-produto";
+import { ObterProdutos } from "../../services/api-produto";
 import { Container, ApiListWrapper, ContainerCard } from "./style";
 import { Consumo } from "./Consumo/"
 import { AddCard } from "./AddCard/"

@@ -3,10 +3,10 @@ import React from "react";
 import { NavBar } from "../Layout/NavBar"
 import { Footer } from "../Layout/Footer"
 
-import { Home } from '../pages/Home'
-import { Sobre } from '../pages/About'
+import { Home } from '../pages/home'
+import { Sobre } from '../pages/about'
 import { NotFound } from '../pages/NotFound'
-import { ProdutoApi } from '../pages/Products'
+import { ProdutoApi } from '../pages/products'
 import { Product } from '../pages/Product'
 import {
     BrowserRouter as Router,

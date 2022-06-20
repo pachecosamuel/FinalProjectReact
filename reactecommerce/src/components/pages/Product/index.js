@@ -1,7 +1,7 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 import { MainContainer, SuperContainer, Top, Bottom, TopLeft, TopRight, ProdutoImage } from "./style";
-import { ObterProduto } from "../../Services/api-produto";
+import { ObterProduto } from "../../services/api-produto";
 
 export function Product() {
     let { idUseParams } = useParams();
