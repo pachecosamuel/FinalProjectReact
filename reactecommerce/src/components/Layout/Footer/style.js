@@ -33,7 +33,7 @@ export const Texto = styled.div`
 export const Paragrafo = styled.a`
   color: aliceblue;
   margin-bottom: 5px;
-  font-size: 1rem;
+  font-size: 1.1rem;
   text-decoration: none;
   cursor: pointer;
   transition: 0.2s;
