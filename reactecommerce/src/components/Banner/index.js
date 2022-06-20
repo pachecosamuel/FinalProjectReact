@@ -1,8 +1,8 @@
 import React from "react";
-
 import { BannerContanier } from "./style";
 
 function Banner() {
+
   return (
     <BannerContanier>
       <div>
