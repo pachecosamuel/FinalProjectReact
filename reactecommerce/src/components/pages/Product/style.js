@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import Fundo from "../../../img/fundoapi.jpg"
 
 const stormy = "#494e6b"
 const cloud = "#98878f"
@@ -12,7 +13,10 @@ export const MainContainer = styled.div`
     align-items: center;
     width: 100%;
     height: 100vh;
-    background-color: ${cloud};
+    background-image: url(${Fundo});
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
 `
 
 export const SuperContainer = styled.div`
