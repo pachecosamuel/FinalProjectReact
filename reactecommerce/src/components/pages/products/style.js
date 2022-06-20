@@ -1,13 +1,4 @@
 import styled from "styled-components";
-import Fundo from "../../../img/fundoapi.jpg"
-
-export const EstiloFundo = styled.div`
-    background-image: url(${Fundo});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-`;
 
 export const Container = styled.div`
 
@@ -19,16 +10,11 @@ export const Container = styled.div`
 
     width: 85%;
     /* height: 70vh; */
-    margin: 1rem auto 0;
+    margin: 1rem auto 1rem;
     padding-top: 80px;
 
-    /* background-color: #ffffff; */
-    /* background-image: url(${Fundo});
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center; */
-
-    /* border: 5px solid black; */
+    background-color: #ffffff;
+    border: 5px solid black;
 
     h1 {
         font-size: 1.2rem;

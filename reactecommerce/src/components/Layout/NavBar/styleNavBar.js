@@ -15,7 +15,7 @@ export const MainContainer = styled.div`
     position: fixed;
     top: ${props => props.active};
     left: 0;
-    transition: 0s;
+    transition: 0.25s;
     background-color: ${blackzada};
     width: 100%;
     height: 70px;

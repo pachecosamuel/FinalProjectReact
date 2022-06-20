@@ -15,17 +15,7 @@ export const Container = styled.div`
     align-items: center;
 
     h2 {
-        border-left: 3px solid #bbb;
-        padding-left: 10px;
-        max-width: 230px;
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-
         color: #1e1e1e;
-        align-self: start;
-        text-align: center;
-        font-size: 1.25rem;
     }
 
     p {
