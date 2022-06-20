@@ -1,32 +1,51 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import imgHome from "./imgHome/categoria.jpg"
+import imgHome2 from "./imgHome2/categoria2.jpg"
+import imgHome3 from "./imgHome3/categoria3.jpg"
 
 
-export const CardWrapper = styled.div`
+
+export const CardWrapper1 = styled.div`
   background-color: #E2E1D9;
   overflow: hidden;
   padding: 0 0 32px;
   margin: 48px auto 0;
+  background-image: url(${imgHome});
+  height: 300px;
   width: 300px;
   font-family: Quicksand, arial, sans-serif;
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
   border-radius: 5px;
   `;
 
-export const Container = styled.div`
-    display: flex;
-    align-items: center;
-    justify-content: center;
-
-    width: 85%;
-    height: 70vh;
-    margin: 1rem auto 1rem;
-    /* margin-top: 1rem; */
-
-    background-color: #E2E1D9;
-    border: 5px solid black;
-
+export const CardWrapper2 = styled.div`
+background-color: #E2E1D9;
+overflow: hidden;
+padding: 0 0 32px;
+margin: 48px auto 0;
+background-image: url(${imgHome2});
+height: 300px;
+width: 300px;
+font-family: Quicksand, arial, sans-serif;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+border-radius: 5px;
 `;
+
+
+export const CardWrapper3 = styled.div`
+  background-color: #E2E1D9;
+  overflow: hidden;
+  padding: 0 0 32px;
+  margin: 48px auto 0;
+  background-image: url(${imgHome3});
+  height: 300px;
+  width: 300px;
+  font-family: Quicksand, arial, sans-serif;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.05), 0 0px 40px rgba(0, 0, 0, 0.08);
+  border-radius: 5px;
+  `;
+
 
 export const CardHeader = styled.header`
   padding-top: 32px;
@@ -69,15 +88,17 @@ export const CardButton = styled.button`
   width: 100%;
   padding: 12px 0;
   font-family: inherit;
-  font-size: 14px;
+  font-size: 30px;
   font-weight: 700;
-  color: #fff;
-  background-color: #494E68;
+  color: #192231; 
+  background-color: #985E6D;
   border: 0;
   border-radius: 35px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
+  opacity: 0.9;
+  
 
   &:hover {
     box-shadow: 0 15px 15px rgba(0, 0, 0, 0.16);
