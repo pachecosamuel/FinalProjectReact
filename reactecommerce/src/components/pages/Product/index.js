@@ -2,14 +2,16 @@ import React from "react";
 import { useParams } from "react-router-dom";
 import { MainContainer, SuperContainer, BtnHref, InsideContainer, Left, Right, RightTop, ProdutoValor, ProdutoImage, ProdutoTitle, ProdutoDescricao, RightBottom, Btn } from "./style";
 import { ObterProduto } from "../../services/api-produto";
+import { ContextData } from "../../context/data"
 
 export function Product() {
     let { idUseParams } = useParams();
 
     const [produto, setProduto] = React.useState();
-    console.log(produto)
 
     const [img, setImg] = React.useState();
+
+    const {cartState, setCartState} = React.useContext(ContextData)
 
     // Essa função faz a requisição da imagem através de um Endpoint para poder evitar o erro de "Not allowed to access local files"
     const fetchImage = async () => {
@@ -23,6 +25,15 @@ export function Product() {
         ObterProduto(idUseParams).then((res) => setProduto(res.data))
         fetchImage();
     }, []);
+
+    function handleAdd() {
+        let list = [];
+        list.push(produto.idProduto)
+
+        setCartState(cartState.concat(list))
+
+        console.log(cartState)
+    }
 
     if (produto === undefined) {
         return (
@@ -44,7 +55,7 @@ export function Product() {
                                 <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
                             </RightTop>
                             <RightBottom>
-                                <BtnHref href="#">
+                                <BtnHref href="#" onClick={handleAdd}>
                                     <Btn>Adicionar ao carrinho</Btn>
                                 </BtnHref>
                                 <BtnHref href="http://localhost:3000/produtos">
