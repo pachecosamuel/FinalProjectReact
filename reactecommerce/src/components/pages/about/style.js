@@ -1,19 +1,27 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     display: flex;
-    align-items: center;
-    justify-content: center;
+    flex-direction: column;
+    /* align-items: center;
+    justify-content: center; */
 
     width: 85%;
-    height: 70vh;
+    /* height: 70vh; */
 
     margin: 1rem auto 1rem;
 
-    background-color: #985E6D;
-    border: 5px solid black;
+    background-color: #192231;
+    /* border: 5px solid black; */
 `;
 
-export const Texto = styled.h1 `
+export const Organizacao = styled.div`
+    display: flex;
+    /* background-color: darksalmon; */
+    /* border: 5px solid goldenrod;
+    border-radius: 280px; */
+`;
+
+export const Texto = styled.h1`
     font-size: 1.2rem;
 `;

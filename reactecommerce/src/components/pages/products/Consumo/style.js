@@ -1,9 +1,9 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
     background: #985e6d;
     padding: 10px;
-    height: 280px;
+    height: 320px;
     width: 250px;
 
     border-radius: 20px;
@@ -36,7 +36,7 @@ export const Container = styled.div `
     }
 `;
 
-export const ButtonArea = styled.div `
+export const ButtonArea = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
@@ -45,7 +45,7 @@ export const ButtonArea = styled.div `
 `;
 
 
-export const Button = styled.button `
+export const Button = styled.button`
     border: none;
     background-color: transparent;
     cursor: pointer;

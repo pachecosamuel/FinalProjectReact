@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Container = styled.div `
+export const Container = styled.div`
 
     display: flex;
     flex-direction: column;
@@ -9,7 +9,7 @@ export const Container = styled.div `
     justify-content: center;
 
     width: 85%;
-    height: 70vh;
+    /* height: 70vh; */
     margin: 1rem auto 1rem;
     padding-top: 80px;
 
@@ -22,7 +22,7 @@ export const Container = styled.div `
     }
 `;
 
-export const ApiListWrapper = styled.div `
+export const ApiListWrapper = styled.div`
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -30,12 +30,15 @@ export const ApiListWrapper = styled.div `
 
     max-width: 1000px;
     /* list-style-type: none; */
+    margin-bottom: 3rem;
+
+    /* border: 5px solid tomato; */
 
     flex-wrap: wrap;
     gap: 10px;
 `;
 
-export const ContainerCard = styled.div `
+export const ContainerCard = styled.div`
     background: #985e6d;
     padding: 10px;
     height: 280px;
@@ -71,7 +74,7 @@ export const ContainerCard = styled.div `
     }
 `;
 
-export const ButtonArea = styled.div `
+export const ButtonArea = styled.div`
     width: 100%;
     display: flex;
     justify-content: space-evenly;
