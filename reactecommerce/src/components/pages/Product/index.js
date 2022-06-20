@@ -44,12 +44,12 @@ export function Product() {
                                 <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
                             </RightTop>
                             <RightBottom>
-                                <Btn>
-                                    <BtnHref href="#">Adicionar ao carrinho</BtnHref>
-                                </Btn>
-                                <Btn>
-                                    <BtnHref href="http://localhost:3000/produtos">Voltar</BtnHref>
-                                </Btn>
+                                <BtnHref href="#">
+                                    <Btn>Adicionar ao carrinho</Btn>
+                                </BtnHref>
+                                <BtnHref href="http://localhost:3000/produtos">
+                                    <Btn>Voltar</Btn>
+                                </BtnHref>
                             </RightBottom>
                         </Right>
                     </InsideContainer>

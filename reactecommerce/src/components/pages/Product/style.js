@@ -131,6 +131,4 @@ export const BtnHref = styled.a`
     color: #111;
     text-decoration: none;
     text-shadow: 0px 0px 1px #888;
-    width: 100%;
-    height: 100%;
 `
