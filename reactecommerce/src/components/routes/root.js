@@ -6,9 +6,9 @@ import { Footer } from "../Layout/Footer"
 import { Home } from '../pages/home'
 import { Sobre } from '../pages/about'
 import { SobreDevs } from '../pages/aboutdevs'
-import { NotFound } from '../pages/notfound'
+import { NotFound } from '../pages/NotFound'
 import { Products } from '../pages/products'
-import { Product } from '../pages/product'
+import { Product } from '../pages/Product'
 import { Cart } from '../pages/cart'
 
 import {

@@ -13,7 +13,7 @@ function Banner() {
         <h1>UMA LOJA PENSADA NA JORNADA DOS FÃNS!</h1>
         <p>CONECTE-SE AOS SEUS PERSONAGENS FAVORITOS.</p>
         <button type="button">
-        <Link to = "/produtoapi" >ESTOU PRONTO!</Link>
+        <Link to = "/produtoapi" style={{ textDecoration: 'none' }} >ESTOU PRONTO!</Link>
         </button>
       </div>
     </BannerContanier>

@@ -91,13 +91,13 @@ export const CardButton = styled.button`
   font-size: 30px;
   font-weight: 700;
   color: #192231; 
-  background-color: #985E6D;
+  background-color:#E2E1D9;
   border: 0;
   border-radius: 35px;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.08);
   cursor: pointer;
   transition: all 0.25s cubic-bezier(0.02, 0.01, 0.47, 1);
-  opacity: 0.9;
+  opacity: 0.8;
   
 
   &:hover {
@@ -105,4 +105,8 @@ export const CardButton = styled.button`
     transform: translate(0, -5px);
   }
 `;
+
+
+
+
 
