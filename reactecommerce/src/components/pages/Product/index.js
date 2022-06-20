@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { MainContainer, SuperContainer, Top, Bottom, TopLeft, TopRight, ProdutoImage } from "./style";
+import { MainContainer, SuperContainer, BtnHref, InsideContainer, Left, Right, RightTop, ProdutoValor, ProdutoImage, ProdutoTitle, ProdutoDescricao, RightBottom, Btn } from "./style";
 import { ObterProduto } from "../../services/api-produto";
 
 export function Product() {
@@ -11,6 +11,7 @@ export function Product() {
 
     const [img, setImg] = React.useState();
 
+    // Essa função faz a requisição da imagem através de um Endpoint para poder evitar o erro de "Not allowed to access local files"
     const fetchImage = async () => {
         const res = await fetch(`http://localhost:8080/ecommerce/produto/${idUseParams}/image`);
         const imageBlob = await res.blob();
@@ -32,17 +33,26 @@ export function Product() {
         return (
             <MainContainer>
                 <SuperContainer>
-                    <Top>
-                        <TopLeft>
+                    <InsideContainer>
+                        <Left>
                             <ProdutoImage src={`${img}`}></ProdutoImage>
-                        </TopLeft>
-                        <TopRight>
-
-                        </TopRight>
-                    </Top>
-                    <Bottom>
-
-                    </Bottom>
+                            <ProdutoTitle>{`${produto.nomeProduto}`}</ProdutoTitle>
+                            <ProdutoValor>R${`${produto.valorUnitario}`}</ProdutoValor>
+                        </Left>
+                        <Right>
+                            <RightTop>
+                                <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
+                            </RightTop>
+                            <RightBottom>
+                                <Btn>
+                                    <BtnHref href="#">Adicionar ao carrinho</BtnHref>
+                                </Btn>
+                                <Btn>
+                                    <BtnHref href="http://localhost:3000/produtoapi">Voltar</BtnHref>
+                                </Btn>
+                            </RightBottom>
+                        </Right>
+                    </InsideContainer>
                 </SuperContainer>
             </MainContainer>
         );
