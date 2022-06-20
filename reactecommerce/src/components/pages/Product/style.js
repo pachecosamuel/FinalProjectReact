@@ -113,13 +113,13 @@ export const Btn = styled.button`
     background-color: #eee;
     padding: 10px;
     font-weight: bold;
-    font-size: 14px;
+    font-size: 20px;
     transition: 0.2s;
     box-shadow: 0px 0px 10px #555;
     border-radius: 10px;
     &:hover {
         background-color: #fff;
-        transform: scale(104%)
+        transform: scale(102%)
     }
 `
 
