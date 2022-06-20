@@ -31,7 +31,7 @@ export function Home() {
           </CardFieldset>
           <CardFieldset>
             <CardButton type="button" >
-            <Link to = "/produtoapi" >Veja mais!</Link>
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
             </CardButton>
           </CardFieldset>
         </CardBody>
@@ -46,7 +46,7 @@ export function Home() {
           </CardFieldset>
           <CardFieldset>
           <CardButton type="button" >
-            <Link to = "/produtoapi" >Veja mais!</Link>
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
             </CardButton>
           </CardFieldset>
         </CardBody>
@@ -62,7 +62,55 @@ export function Home() {
           </CardFieldset>
           <CardFieldset>
           <CardButton type="button" >
-            <Link to = "/produtoapi" >Veja mais!</Link>
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
+            </CardButton>
+          </CardFieldset>
+        </CardBody>
+      </CardWrapper3>
+
+      <CardWrapper3>
+        <CardHeader>
+          <CardHeading></CardHeading>
+        </CardHeader>
+        <CardBody>
+          <CardFieldset>
+            
+          </CardFieldset>
+          <CardFieldset>
+          <CardButton type="button" >
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
+            </CardButton>
+          </CardFieldset>
+        </CardBody>
+      </CardWrapper3>
+
+      <CardWrapper3>
+        <CardHeader>
+          <CardHeading></CardHeading>
+        </CardHeader>
+        <CardBody>
+          <CardFieldset>
+            
+          </CardFieldset>
+          <CardFieldset>
+          <CardButton type="button" >
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
+            </CardButton>
+          </CardFieldset>
+        </CardBody>
+      </CardWrapper3>
+
+      <CardWrapper3>
+        <CardHeader>
+          <CardHeading></CardHeading>
+        </CardHeader>
+        <CardBody>
+          <CardFieldset>
+            
+          </CardFieldset>
+          <CardFieldset>
+          <CardButton type="button" >
+            <Link to = "/produtos" style={{ textDecoration: 'none' }} >Veja mais!</Link>
             </CardButton>
           </CardFieldset>
         </CardBody>

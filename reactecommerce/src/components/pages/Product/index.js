@@ -31,8 +31,6 @@ export function Product() {
         list.push(produto.idProduto)
 
         setCartState(cartState.concat(list))
-
-        console.log(cartState)
     }
 
     if (produto === undefined) {
@@ -55,7 +53,7 @@ export function Product() {
                                 <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
                             </RightTop>
                             <RightBottom>
-                                <BtnHref href="#" onClick={handleAdd}>
+                                <BtnHref href="http://localhost:3000/carrinho" onClick={handleAdd}>
                                     <Btn>Adicionar ao carrinho</Btn>
                                 </BtnHref>
                                 <BtnHref href="http://localhost:3000/produtos">
