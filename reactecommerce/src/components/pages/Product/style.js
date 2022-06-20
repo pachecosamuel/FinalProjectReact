@@ -87,7 +87,7 @@ export const RightTop = styled.div`
     justify-content: top;
     align-items: left;
     width: 100%;
-    height: 50%;
+    height: 85%;
 `
 
 export const ProdutoDescricao = styled.p`
@@ -103,7 +103,7 @@ export const RightBottom = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 50%;
+    height: 15%;
     gap: 20px;
 `
 
