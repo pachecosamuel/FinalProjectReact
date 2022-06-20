@@ -3,10 +3,11 @@
 // é fictício e temporário.
 
 import React, { useEffect } from "react";
-import { ObterProdutos } from "../../Services/api-produto";
-import { Container, ApiListWrapper, ContainerCard } from "./style";
+import { ObterProdutos } from "../../services/api-produto";
+import { Container, ApiListWrapper, ContainerCard, EstiloFundo } from "./style";
 import { Consumo } from "./Consumo/"
 import { AddCard } from "./AddCard/"
+
 
 
 export const ProdutoApi = () => {
@@ -19,43 +20,47 @@ export const ProdutoApi = () => {
 
     if (produtos.length < 1) {
         return (
-            <Container>
-                <ApiListWrapper>
+            <EstiloFundo>
+                <Container>
+                    <ApiListWrapper>
 
-                    {produtos?.map((item) => (
-                        <Consumo
-                            key={item.idProduto}
-                            idProduto={item.idProduto}
-                            nomeProduto={item.nomeProduto}
-                            descricaoProduto={item.descricaoProduto}
-                            caminhoImagem={item.caminhoImagem}
-                        />
-                    ))}
+                        {produtos?.map((item) => (
+                            <Consumo
+                                key={item.idProduto}
+                                nomeProduto={item.nomeProduto}
+                                descricaoProduto={item.descricaoProduto}
+                                caminhoImagem={item.caminhoImagem}
+                            // idProduto={item.idProduto}
+                            />
+                        ))}
 
-                    <AddCard />
+                        <AddCard />
 
-                </ApiListWrapper>
-            </Container>
+                    </ApiListWrapper>
+                </Container>
+            </EstiloFundo>
         );
     } else {
         return (
-            <Container>
-                <ApiListWrapper>
+            <EstiloFundo>
+                <Container>
+                    <ApiListWrapper>
 
-                    {produtos?.map((item) => (
-                        <Consumo
-                            key={item.idProduto}
-                            idProduto={item.idProduto}
-                            nomeProduto={item.nomeProduto}
-                            descricaoProduto={item.descricaoProduto}
-                            caminhoImagem={item.caminhoImagem}
-                        />
-                    ))}
+                        {produtos?.map((item) => (
+                            <Consumo
+                                key={item.idProduto}
+                                idProduto={item.idProduto}
+                                nomeProduto={item.nomeProduto}
+                                descricaoProduto={item.descricaoProduto}
+                                caminhoImagem={item.caminhoImagem}
+                            />
+                        ))}
 
-                    <AddCard />
+                        <AddCard />
 
-                </ApiListWrapper>
-            </Container>
+                    </ApiListWrapper>
+                </Container>
+            </EstiloFundo>
         );
     }
 

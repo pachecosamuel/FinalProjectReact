@@ -141,7 +141,7 @@ export const Sobre = () => {
                                 <div className={styles.SocialMedia}>
                                     <ul>
                                         <li><a href="https://www.instagram.com/simone.araujo13/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="https://www.linkedin.com/in/samuel-pacheco07" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
+                                        <li><a href="#" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
                                         <li><a href="https://github.com/rodriguessimone" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
                                     </ul>
                                 </div>
@@ -179,7 +179,7 @@ export const Sobre = () => {
                                 <div className={styles.SocialMedia}>
                                     <ul>
                                         <li><a href="https://www.instagram.com/jeje.sabino/" target="_blank"><p className={styles.Icones} ><FaInstagram /></p></a></li>
-                                        <li><a href="www.linkedin.com/in/samuel-pacheco07" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
+                                        <li><a href="#" target="_blank"><p className={styles.Icones} ><FaLinkedin /></p></a></li>
                                         <li><a href="https://github.com/JessySabino" target="_blank"><p className={styles.Icones} ><FaGithub /></p></a></li>
                                     </ul>
                                 </div>
