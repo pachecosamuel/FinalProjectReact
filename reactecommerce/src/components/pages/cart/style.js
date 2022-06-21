@@ -83,7 +83,7 @@ export const PageTitle = styled.h1`
 export const Right = styled.div`
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     width: 75%;
     height: 100%;
@@ -101,23 +101,52 @@ export const RightTop = styled.div`
 export const Product = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: center;
+    gap: 10px;
     align-items: center;
     width: 100%;
     height: 110px;
     padding: 10px;
+    border: 2px solid #111;
+    box-shadow: 0px 0px 12px #888;
+    border-radius: 15px;
+`
 
-    img {
-        height: 100px;
-    }
+export const ProductName = styled.h1`
+    font-size: 24px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+`
 
-    h1 {
-        font-size: 18px;
-    }
+export const ProductValue = styled.p`
+    font-size: 14px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+`
 
-    p {
-        
-    }
+export const ProductImage = styled.img`
+    height: 100px;
+`
+
+export const ProductTotal = styled.h3`
+    font-size: 14px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+`
+
+export const LabelInputQty = styled.label`
+    font-size: 14px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+`
+
+export const InputQty = styled.input`
+    width: 50px;
+    height: 20px;
+`
+
+export const ProductRemove = styled.button`
+
 `
 
 export const RightBottom = styled.div`
