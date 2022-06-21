@@ -10,6 +10,7 @@ import { NotFound } from '../pages/NotFound'
 import { Products } from '../pages/products'
 import { Product } from '../pages/Product'
 import { Cart } from '../pages/cart'
+import { Login } from '../pages/login'
 
 import {
     BrowserRouter as Router,
@@ -30,6 +31,7 @@ export const Root = () => {
                 <Route path="/sobre/devs" element={<SobreDevs />} />
                 <Route path="/produto/:idUseParams" element={<Product />} />
                 <Route path="/carrinho" element={<Cart />} />
+                <Route path="/login" element={<Login />} />
                 <Route path="*" element={<NotFound />} />
             </Routes>
             <Footer />

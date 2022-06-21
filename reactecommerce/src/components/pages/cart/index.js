@@ -1,17 +1,21 @@
 import React from 'react'
-import { ContextData } from "../../context/data"
-import { Href, Btn, MainContainer, SuperContainer, InsideContainer, Left, Right, Logo, PageTitle, RightTop, RightBottom, Product } from './style'
+import { Href, Btn, MainContainer, SuperContainer, InsideContainer, Left, Right, Logo, PageTitle, RightTop, RightBottom, Product, ProductName, ProductImage, ProductValue, InputQty, LabelInputQty } from './style'
 
 import logo from "../../../img/logo/logo.png";
 
 export function Cart() {
-  const { cartState, setCartState } = React.useContext(ContextData)
 
-  function handleClear() {
-    setCartState([])
+  const { userInput, setUserInput } = React.useState(1)
+
+  function handleChange(e) {
+    setUserInput(e.target.value)
   }
 
-  if (cartState.length < 1) {
+  function handleClear() {
+    
+  }
+
+  if (0 < 1) {
     return (
       <MainContainer>
         <SuperContainer>
@@ -29,7 +33,12 @@ export function Cart() {
             <Right>
               <RightTop>
                 <Product>
-
+                  <ProductImage src={logo}/>
+                  <ProductName>Produto Teste</ProductName>
+                  <ProductValue>Valor: R$50,00</ProductValue>
+                  <LabelInputQty>Qtd: </LabelInputQty>
+                  <InputQty onChange={handleChange} value={userInput}/>
+                  <ProductValue>Total: {50*userInput}</ProductValue>
                 </Product>
               </RightTop>
               <RightBottom>

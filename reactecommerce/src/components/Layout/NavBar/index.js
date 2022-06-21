@@ -61,6 +61,9 @@ export const NavBar = () => {
           <Item>
             <Href href="/sobre">Sobre</Href>
           </Item>
+          <Item>
+            <Href href="/login">Login</Href>
+          </Item>
         </Lista>
       </ContainerRefs>
     </MainContainer>
