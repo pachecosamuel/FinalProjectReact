@@ -77,6 +77,7 @@ export const FormInput = styled.input`
     width: 70%;
     height: 1.8rem;
     border-radius: 10px;
+    border: none;
 `
 
 export const FormButton = styled.button`
@@ -86,12 +87,12 @@ export const FormButton = styled.button`
     padding-inline: 6px;
     border: 1px solid #111;
     border-radius: 5px;
-    background-color: #eee;
+    background-color: #fff8;
     box-shadow: 0px 0px 5px #888;
     transition: 0.1s;
     &:hover {
         transform: scale(102%);
-        background-color: #ddd;
+        background-color: #fffd;
     }
 
     &:active {
