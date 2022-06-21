@@ -1,7 +1,7 @@
 import React from 'react'
 import { useNavigate } from "react-router-dom"
 import { api } from "../../services/api"
-import { MainContainer, ContainerButtons, LoginCard, Form, FormTitle, FormInput, FormButton } from './style'
+import { MainContainer, ContainerButtons, LoginCard, Form, FormTitle, FormInput, FormButton, FundoSaturno } from './style'
 
 export function Login() {
 
@@ -14,17 +14,17 @@ export function Login() {
   let client;
   let idClient;
 
-  function getIdClient (email){
+  function getIdClient(email) {
     client = clientList.filter(c => c.email === email)
     console.log(clientList)
     console.log(client)
-    if(client[0] === undefined){
+    if (client[0] === undefined) {
       alert('Email não cadastrado. Cadastre-se!')
-    }else{
+    } else {
       idClient = client[0].idClient;
       localStorage.setItem('idClient', client[0].idClient)
       localStorage.setItem('nomeClient', client[0].nomeCompleto)
-    }    
+    }
   }
 
   const allowLogin = async (email, password) => {
@@ -39,7 +39,7 @@ export function Login() {
       localStorage.removeItem('idClient')
       localStorage.removeItem('nomeClient')
       navigate("/login")
-    }      
+    }
   }
 
   function handleLogin() {
@@ -51,20 +51,20 @@ export function Login() {
     navigate("/registrar")
   }
 
-  function handleEmailChange(e){
+  function handleEmailChange(e) {
     setEmail(e.target.value)
   }
 
-  function handlePasswordChange(e){
+  function handlePasswordChange(e) {
     setPassword(e.target.value)
   }
 
   const getClients = async () => {
     const response = await api.get(`cliente/`)
     setClientList(response.data)
-  }  
+  }
 
-  React.useEffect(()=>{
+  React.useEffect(() => {
     getClients()
   }, [])
 

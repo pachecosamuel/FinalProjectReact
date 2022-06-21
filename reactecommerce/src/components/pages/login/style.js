@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import imagem from "../../../img/Login.jpg"
 
 export const Href = styled.a`
     text-decoration: none;
@@ -37,9 +38,17 @@ export const LoginCard = styled.div`
     align-items: center;
     width: 30%;
     height: 90%;
-    background-color: #fff;
+
+    /* background-color: #fff; */
+    background-image: url(${imagem});
+    background-position: center;
+    background-size: cover;
+    background-position: center;
+
     box-shadow: 0px 0px 15px #fff;
     border-radius: 15px;
+
+
 `
 
 export const Form = styled.div`
@@ -57,6 +66,7 @@ export const FormTitle = styled.p`
     text-align: center;
     font-size: 32px;
     text-shadow: 0px 0px 1px #111;
+    color: #ffffff;
 `
 
 export const FormInput = styled.input`
@@ -65,6 +75,8 @@ export const FormInput = styled.input`
     padding-inline: 5px;
     outline: none;
     width: 70%;
+    height: 1.8rem;
+    border-radius: 10px;
 `
 
 export const FormButton = styled.button`
