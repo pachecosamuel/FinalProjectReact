@@ -6,9 +6,6 @@ import React, { useEffect } from "react";
 import { ObterProdutos } from "../../services/api-produto";
 import { Container, ApiListWrapper, ContainerCard, EstiloFundo } from "./style";
 import { Consumo } from "./Consumo/"
-import { AddCard } from "./AddCard/"
-
-
 
 export const Products = () => {
     const [produtos, setProdutos] = React.useState([]);

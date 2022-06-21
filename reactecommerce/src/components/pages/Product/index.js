@@ -10,6 +10,11 @@ export function Product() {
 
     const [img, setImg] = React.useState();
 
+    const formatBRL = value => {
+        const options = { style: "currency", currency: "BRL"};
+        return value.toLocaleString("pt-BR", options);
+    }
+
     // Essa função faz a requisição da imagem através de um Endpoint para poder evitar o erro de "Not allowed to access local files"
     const fetchImage = async () => {
         const res = await fetch(`http://localhost:8080/ecommerce/produto/${idUseParams}/image`);
@@ -40,7 +45,7 @@ export function Product() {
                         <Left>
                             <ProdutoImage src={`${img}`}></ProdutoImage>
                             <ProdutoTitle>{`${produto.nomeProduto}`}</ProdutoTitle>
-                            <ProdutoValor>R${`${produto.valorUnitario},00`}</ProdutoValor>
+                            <ProdutoValor>{`${formatBRL(produto.valorUnitario)}`}</ProdutoValor>
                         </Left>
                         <Right>
                             <RightTop>

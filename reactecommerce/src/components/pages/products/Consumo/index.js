@@ -6,6 +6,11 @@ export const Consumo = ({ idProduto, nomeProduto, descricaoProduto, valorUnitari
 
     const [img, setImg] = React.useState();
 
+    const formatBRL = value => {
+        const options = { style: "currency", currency: "BRL"};
+        return value.toLocaleString("pt-BR", options);
+    }
+
     // Essa função faz a requisição da imagem através de um Endpoint para poder evitar o erro de "Not allowed to access local files"
     const fetchImage = async () => {
         const res = await fetch(`http://localhost:8080/ecommerce/produto/${idProduto}/image`);
@@ -26,7 +31,7 @@ export const Consumo = ({ idProduto, nomeProduto, descricaoProduto, valorUnitari
                     <h2>{nomeProduto}</h2>
                     <p>{descricaoProduto}</p>
                     <img src={img}/>
-                    <p>Valor Unitário: R${valorUnitario},00</p>
+                    <p>Valor Unitário: {formatBRL(valorUnitario)}</p>
                 </Card>
             </Link>
         </li>
