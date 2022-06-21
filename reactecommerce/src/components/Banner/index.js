@@ -13,7 +13,7 @@ function Banner() {
     <BannerContanier>
       <div>
         <h2>PRODUTOS 100% ORIGINAIS PENSADOS EM VOCÊ!</h2>
-        <h1>UMA LOJA PENSADA NA JORNADA DOS FÃNS!</h1>
+        <h1>UMA LOJA FEITA PARA OS FÃS!</h1>
         <p>CONECTE-SE AOS SEUS PERSONAGENS FAVORITOS.</p>
         <button type="button" onClick={handleClick} style={{ textDecoration: 'none' }}>
           ESTOU PRONTO!

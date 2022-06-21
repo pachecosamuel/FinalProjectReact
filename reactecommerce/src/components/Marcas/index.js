@@ -1,12 +1,14 @@
 import React from "react";
 
-import { MarcasContanier, ImgQuadrinhos, ImgDc, ImgBanpresto } from "./style";
+import { AreaLogo, MarcasContanier, ImgQuadrinhos, ImgDc } from "./style";
+
 import Quadrinhos from "./ImgMarcas/imgQuadrinhos.jpg";
 import Dc from "./ImgMarcas/Dc-Collectibles.png";
 import Banpresto from "./ImgMarcas/banpresto.png";
 import Bandai from "./ImgMarcas/bandai.png";
 import Hasbro from "./ImgMarcas/hasbro.png";
-import IronStudio from "./ImgMarcas/ironStudio.png";
+import Lego from "../../img/lego.jpg"
+import Iron from "../../img/Iron.png"
 
 function Marcas() {
   return (
@@ -14,13 +16,19 @@ function Marcas() {
       <MarcasContanier>
         <div>
           <ImgQuadrinhos src={Quadrinhos} />
-          <h2>ALGUMAS MARCAS TRABALHADAS:</h2>
+        </div>
+
+        <h2>ALGUMAS MARCAS TRABALHADAS:</h2>
+
+        <AreaLogo>
           <ImgDc src={Dc} />
-          <ImgBanpresto src={Banpresto} />
+          <ImgDc src={Banpresto} />
           <ImgDc src={Bandai} />
           <ImgDc src={Hasbro} />
-          <ImgDc src={IronStudio} />
-        </div>
+          <ImgDc src={Lego} />
+          <ImgDc src={Iron} />
+        </AreaLogo>
+
       </MarcasContanier>
     </>
   );

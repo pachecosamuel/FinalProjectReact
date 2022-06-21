@@ -36,8 +36,8 @@ export const BannerContanier = styled.div`
     text-transform: uppercase;
     font-size: 2.8rem;
     color: #dfa70c;
-    margin: 0;
-    margin-bottom: 1rem;
+    margin: 1.5rem;
+    margin-bottom: 1.5rem;
   }
 
   p {
@@ -52,14 +52,18 @@ export const BannerContanier = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+
     color: #eeeeee;
     background-color: transparent;
     border-radius: 42px;
     font-size: 1rem;
+    font-weight: bold;
+
     padding: 10px 15px;
     margin: 0 auto;
     margin-bottom: 1 rem;
     margin-top: 2rem;
+    
     transition-duration: 1s;
     cursor: pointer;
 
