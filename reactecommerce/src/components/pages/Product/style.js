@@ -1,11 +1,6 @@
 import styled from "styled-components";
 import Fundo from "../../../img/fundoapi.jpg"
 
-const stormy = "#494e6b"
-const cloud = "#98878f"
-const sunset = "#985e6d"
-const evening = "#192231"
-
 export const MainContainer = styled.div`
     display: flex;
     flex-direction: column;
@@ -24,7 +19,7 @@ export const SuperContainer = styled.div`
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    width: 90%;
+    width: 50%;
     height: 80%;
     gap: 20px;
     padding: 20px;
@@ -54,7 +49,7 @@ export const Left = styled.div`
 `
 
 export const ProdutoImage = styled.img`
-    width: 300px;
+    width: 180px;
     border-radius: 50%;
     box-shadow: 0px 0px 20px #111;
     transition: 0.2s;
@@ -68,12 +63,14 @@ export const ProdutoTitle = styled.p`
     color: #111;
     text-shadow: 0px 0px 1px #111;
     font-weight: bold;
+    text-align: center;
 `
 
 export const ProdutoValor = styled.p`
     font-size: 24px;
     color: #111;
     text-shadow: 0px 0px 1px #111;
+    font-style: italic;
 `
 
 export const Right = styled.div`
@@ -83,6 +80,8 @@ export const Right = styled.div`
     align-items: center;
     width: 75%;
     height: 100%;
+    border-left: 3px solid #999a;
+    padding-left: 16px;
 `
 
 export const RightTop = styled.div`
@@ -92,6 +91,21 @@ export const RightTop = styled.div`
     align-items: left;
     width: 100%;
     height: 85%;
+    gap: 15px;
+`
+
+export const ProdutoCategoria = styled.p`
+    font-size: 16px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+    text-align: justify;
+`
+
+export const ProdutoEstoque = styled.p`
+    font-size: 16px;
+    color: #111;
+    text-shadow: 0px 0px 1px #111;
+    text-align: justify;
 `
 
 export const ProdutoDescricao = styled.p`

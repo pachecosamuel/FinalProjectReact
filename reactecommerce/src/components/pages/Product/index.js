@@ -1,6 +1,6 @@
 import React from "react";
 import { useParams } from "react-router-dom";
-import { MainContainer, SuperContainer, BtnHref, InsideContainer, Left, Right, RightTop, ProdutoValor, ProdutoImage, ProdutoTitle, ProdutoDescricao, RightBottom, Btn } from "./style";
+import { MainContainer, SuperContainer, BtnHref, InsideContainer, Left, Right, RightTop, ProdutoValor, ProdutoEstoque, ProdutoImage, ProdutoTitle, ProdutoDescricao, RightBottom, Btn, ProdutoCategoria } from "./style";
 import { ObterProduto } from "../../services/api-produto";
 
 export function Product() {
@@ -21,7 +21,7 @@ export function Product() {
     React.useEffect(() => {
         ObterProduto(idUseParams).then((res) => setProduto(res.data))
         fetchImage();
-    });
+    }, []);
 
     function handleAdd() {
         
@@ -40,10 +40,12 @@ export function Product() {
                         <Left>
                             <ProdutoImage src={`${img}`}></ProdutoImage>
                             <ProdutoTitle>{`${produto.nomeProduto}`}</ProdutoTitle>
-                            <ProdutoValor>R${`${produto.valorUnitario}`}</ProdutoValor>
+                            <ProdutoValor>R${`${produto.valorUnitario},00`}</ProdutoValor>
                         </Left>
                         <Right>
                             <RightTop>
+                                <ProdutoCategoria><b>Categoria: </b>{`${produto.categoriaDTO.nomeCategoria}`}</ProdutoCategoria>
+                                <ProdutoEstoque><b>Estoque: </b>{`${produto.qtdEstoque}`} un.</ProdutoEstoque>
                                 <ProdutoDescricao><b>Descrição do Produto: </b>{`${produto.descricaoProduto}`}</ProdutoDescricao>
                             </RightTop>
                             <RightBottom>

@@ -1,75 +1,47 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-    background: #985e6d;
+export const Card = styled.div`
+    background: #fff;
+    box-shadow: 0px 0px 15px #111;
     padding: 10px;
-    height: 320px;
-    width: 250px;
-
+    height: 400px;
+    width: 300px;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.08);
-
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
+    transition: 0.2s;
+    row-gap: 8px;
 
     h2 {
         border-left: 3px solid #bbb;
-        padding-left: 10px;
-        max-width: 230px;
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        color: #1e1e1e;
-        align-self: start;
-        text-align: center;
+        color: #111;
+        text-shadow: 0px 0px 1px #111;
+        text-align: left;
         font-size: 1.25rem;
+        width: 90%;
+        padding-left: 8px;
     }
 
     p {
         border-left: 3px solid #bbb;
-        padding-left: 10px;
-        max-width: 230px;
-
-        margin-top: 10px;
-        margin-bottom: 10px;
-
-        color: #999999;
+        color: #111;
+        text-shadow: 0px 0px 1px #111;
         font-style: italic;
-        align-self: start;
-
-        /* white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis; */
-    }
-`;
-
-export const ButtonArea = styled.div`
-    width: 100%;
-    display: flex;
-    justify-content: space-evenly;
-
-    margin-top: 5px;
-`;
-
-
-export const Button = styled.button`
-    border: none;
-    background-color: transparent;
-    cursor: pointer;
-
-    transition: opacity 0.2s ease-out;
-
-    svg{
-        height: 20px;
-        width: 20px;
-        color: #1e1e1e;
+        text-align: left;
+        width: 90%;
+        padding-left: 8px;
     }
 
-    &:hover{
-        opacity: 0.5;
-        color: tomato;
+    img {
+        border-left: 3px solid #bbb;
+        width: 90%;
+        max-height: 60%;
+        padding-left: 8px;
+    }
+
+    &:hover {
+        transform: scale(102%)
     }
 `;

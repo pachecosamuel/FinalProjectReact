@@ -1,33 +1,34 @@
 import React from "react";
-import { Container, ButtonArea, Button } from "./style";
+import { Card } from "./style";
+import { Link } from "react-router-dom"
 
-import { IoTrashBin, IoPencil } from "react-icons/io5"
-import { FcMoneyTransfer } from "react-icons/fc"
+export const Consumo = ({ idProduto, nomeProduto, descricaoProduto, valorUnitario }) => {
 
-export const Consumo = ({ idProduto, nomeProduto, descricaoProduto, caminhoImagem }) => {
+    const [img, setImg] = React.useState();
+
+    // Essa função faz a requisição da imagem através de um Endpoint para poder evitar o erro de "Not allowed to access local files"
+    const fetchImage = async () => {
+        const res = await fetch(`http://localhost:8080/ecommerce/produto/${idProduto}/image`);
+        const imageBlob = await res.blob();
+        const imageObjectURL = URL.createObjectURL(imageBlob);
+        setImg(imageObjectURL);
+    };
+
+    React.useEffect(() => {
+        fetchImage();
+        console.log(img)
+    }, []);
 
     return (
         <li>
-            <Container>
-                {/* <h3>{idProduto}</h3> */}
-                <h2>{nomeProduto}</h2>
-                <p>{descricaoProduto}</p>
-                <p>{caminhoImagem} <img src="https://static3.tcdn.com.br/img/img_prod/460977/funko_pop_stitch_super_sized_10_lilo_e_stitch_disney_1046_funko_92599_1_0e8a2bfb93ba54342c2be09048f36cbf.jpeg" alt="Little" width={100} height={100} /> </p>
-
-                <ButtonArea>
-                    <Button>
-                        <FcMoneyTransfer />
-                    </Button>
-                    <Button>
-                        <IoPencil />
-                    </Button>
-                    <Button>
-                        <IoTrashBin />
-                    </Button>
-                </ButtonArea>
-
-
-            </Container>
+            <Link to={`../produto/${idProduto}`} style={{textDecoration: "none"}}>
+                <Card>
+                    <h2>{nomeProduto}</h2>
+                    <p>{descricaoProduto}</p>
+                    <img src={img}/>
+                    <p>Valor Unitário: R${valorUnitario},00</p>
+                </Card>
+            </Link>
         </li>
     );
 }

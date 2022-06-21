@@ -35,7 +35,7 @@ export const NavBar = () => {
     if (typeof window !== "undefined") {
       window.addEventListener("scroll", controlNavbar);
 
-      // Função que limpa, evitando loops
+      // limpar o eventlistener, evitando loops
       return () => {
         window.removeEventListener("scroll", controlNavbar);
       };

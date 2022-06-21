@@ -28,7 +28,7 @@ export const MainContainer = styled.div`
     justify-content: center;
     align-items: center;
     width: 100%;
-    height: 100vh;
+    padding-block: 40px;
 `
 
 export const SuperContainer = styled.div`
@@ -36,8 +36,7 @@ export const SuperContainer = styled.div`
     flex-direction: column;
     justify-content: top;
     align-items: center;
-    width: 90%;
-    height: 80%;
+    max-width: 90%;
     gap: 20px;
     padding: 20px;
     box-shadow: 0px 0px 35px #111;
@@ -50,8 +49,6 @@ export const InsideContainer = styled.div`
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 100%;
     gap: 20px;
 `
 
@@ -60,8 +57,6 @@ export const Left = styled.div`
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 25%;
-    height: 100%;
     gap: 20px;
 `
 
@@ -85,8 +80,9 @@ export const Right = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 75%;
-    height: 100%;
+    border-left: 3px solid #999a;
+    padding-left: 16px;
+    gap: 20px;
 `
 
 export const RightTop = styled.div`
@@ -94,8 +90,9 @@ export const RightTop = styled.div`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 92%;
     height: 80%;
+    gap: 10px;
 `
 
 export const Product = styled.div`
@@ -134,26 +131,47 @@ export const ProductTotal = styled.h3`
     text-shadow: 0px 0px 1px #111;
 `
 
-export const LabelInputQty = styled.label`
-    font-size: 14px;
-    color: #111;
-    text-shadow: 0px 0px 1px #111;
-`
-
-export const InputQty = styled.input`
-    width: 50px;
-    height: 20px;
-`
-
 export const ProductRemove = styled.button`
+    cursor: pointer;
+    border: 1px solid #111;
+    padding: 4px;
+    box-shadow: 0px 0px 6px #555;
+    transition: 0.1s;
+    outline: none;
 
+    &:hover {
+        background-color: #ccc;
+    }
+
+    &:active {
+        background-color: #900;
+    }
 `
 
 export const RightBottom = styled.div`
     display: flex;
     flex-direction: row;
-    justify-content: left;
+    justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 20%;
+`
+
+export const FinishOrder = styled.button`
+    cursor: pointer;
+    border: 1px solid #111;
+    background-color: #fff;
+    padding: 4px;
+    transition: 0.1s;
+    font-weight: bold;
+    font-size: 14px;
+    box-shadow: 0px 0px 6px #555;
+    outline: none;
+
+    &:hover {
+        background-color: #eee;
+        transform: scale(103%)
+    }
+
+    &:active {
+        background-color: #900;
+    }
 `

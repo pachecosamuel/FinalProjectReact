@@ -42,14 +42,14 @@ export const ApiListWrapper = styled.div`
     flex-direction: row;
     justify-self: center;
 
-    max-width: 1000px;
+    max-width: 1150px;
     /* list-style-type: none; */
     margin-bottom: 3rem;
 
     /* border: 5px solid tomato; */
 
     flex-wrap: wrap;
-    gap: 10px;
+    gap: 40px;
 `;
 
 export const ContainerCard = styled.div`

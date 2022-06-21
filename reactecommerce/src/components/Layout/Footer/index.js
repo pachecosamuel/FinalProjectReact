@@ -9,7 +9,6 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaTeamspeak } from "react-icons/fa";
 import { AiOutlineQuestionCircle } from "react-icons/ai";
 
-
 export const Footer = () => {
 
   return (

@@ -1,17 +1,20 @@
 import React from 'react'
-import { Href, Btn, MainContainer, SuperContainer, InsideContainer, Left, Right, Logo, PageTitle, RightTop, RightBottom, Product, ProductName, ProductImage, ProductValue, InputQty, LabelInputQty } from './style'
+import { Href, Btn, FinishOrder, MainContainer, SuperContainer, InsideContainer, Left, Right, Logo, PageTitle, RightTop, RightBottom, Product, ProductName, ProductImage, ProductValue, InputQty, LabelInputQty, ProductRemove } from './style'
 
 import logo from "../../../img/logo/logo.png";
+import { FaTrash } from "react-icons/fa";
 
 export function Cart() {
 
-  const { userInput, setUserInput } = React.useState(1)
-
-  function handleChange(e) {
-    setUserInput(e.target.value)
+  function handleClear() {
+    
   }
 
-  function handleClear() {
+  function handleRemove() {
+
+  }
+
+  function handleFinish() {
     
   }
 
@@ -35,14 +38,13 @@ export function Cart() {
                 <Product>
                   <ProductImage src={logo}/>
                   <ProductName>Produto Teste</ProductName>
-                  <ProductValue>Valor: R$50,00</ProductValue>
-                  <LabelInputQty>Qtd: </LabelInputQty>
-                  <InputQty onChange={handleChange} value={userInput}/>
-                  <ProductValue>Total: {50*userInput}</ProductValue>
+                  <ProductValue><b>Valor:</b> <i>R$50,00</i></ProductValue>
+                  <ProductValue><b>Total:</b> <i>R${50*1},00</i></ProductValue>
+                  <ProductRemove onClick={handleRemove}><FaTrash/></ProductRemove>
                 </Product>
               </RightTop>
               <RightBottom>
-
+                  <FinishOrder onClick={handleFinish}>Finalizar Pedido</FinishOrder>
               </RightBottom>
             </Right>
           </InsideContainer>
